@@ -43,9 +43,11 @@ const handlers = {
     'GetLumenPriceDollarsIntent': function () {
         getRequest(crypto, (apiResult) => {
             const speechOutput = "The current lumen price on coinmarketcap.com is: " + apiResult["price_usd"] + " dollars.";
-            this.response.speak(speechOutput)
-                .cardRenderer(SKILL_NAME, speechOutput, imageObj);
-            this.emit(':responseReady');
+            this.emit(':tellWithCard', speechOutput, SKILL_NAME, speechOutput, imageObj);
+
+            // this.response.speak(speechOutput)
+            //     .cardRenderer(SKILL_NAME, speechOutput, imageObj);
+            // this.emit(':responseReady');
         }); 
     },
     'GetLumenPriceBtcIntent': function () {
