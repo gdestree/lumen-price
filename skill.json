@@ -6,8 +6,8 @@
           "summary": "Retrieve the latest info on Stellar Lumens from coinmarketcap.com.",
           "examplePhrases": [
             "Alexa start Lumen Price",
-            "Alexa open Lumen Price",
-            "Alexa what is the lumen price?"
+            "Alexa what is the lumen price in dollars?",
+            "Alexa what is the lumen price in bitcoin?"
           ],
           "keywords": [
             "Stellar",
@@ -15,12 +15,12 @@
             "Cryptocurrency"
           ],
           "name": "Lumen Price",
-          "description": "Ask for the current Lumen Price, and retrieve the latest info from coinmarketcap.com.\n\nLumen price will keep you upto date about your favorite cryptocurrency Stellar Lumens.\n\nTo start, just say \"Alexa, start Lumen Price\" or \"Alexa, what is the lumen price?\" or \"Alexa, what is the lumen price in dollars?\" or \"Alexa, what is the lumen price in bitcoin?\" to get the current price\".\n\nAt anytime, you can stop by saying \"Alexa, stop\" \n\n Feel Free to donate lumen on: GC42ZJ532XH653ZRKCDISBTWOKR3FQ7UCQAQ7XWYZ4FHIRRCXTQKE5PA"
+          "description": "Ask for the current Lumen Price, and retrieve the latest info from coinmarketcap.com.\n\nLumen price will keep you upto date about your favorite cryptocurrency Stellar Lumens.\n\nTo start, just say \"Alexa, start Lumen Price\" or \"Alexa, what is the lumen price?\" or \"Alexa, what is the lumen price in dollars?\" or \"Alexa, what is the lumen price in bitcoin?\" to get the current price.\n\nAt anytime, you can stop by saying \"Alexa, stop\" \n\nFeel Free to donate lumen on: GC42ZJ532XH653ZRKCDISBTWOKR3FQ7UCQAQ7XWYZ4FHIRRCXTQKE5PA"
         }
       },
       "isAvailableWorldwide": true,
       "testingInstructions": "Sample Testing Instructions.",
-      "category": "EDUCATION_AND_REFERENCE",
+      "category": "BUSINESS_AND_FINANCE",
       "distributionCountries": []
     },
     "apis": {
