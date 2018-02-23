@@ -16,22 +16,8 @@
           ],
           "name": "Lumen Price",
           "description": "Ask for the current Lumen Price, and retrieve the latest info from coinmarketcap.com.\n\nLumen price will keep you uptodate about your favorite cryptocurrency Stellar Lumens.\n\nTo start, just say \"Alexa, start Lumen Price\" or \"Alexa, open Lumen Price\" to get the current price\".\n\nAt anytime, you can stop by saying \"Alexa, stop\""
-        },
-        "en-GB": {
-          "summary": "Retrieve the latest info on Stellar Lumens from coinmarketcap.com.",
-          "examplePhrases": [
-            "Alexa start Lumen Price",
-            "Alexa open Lumen Price",
-            "Alexa what is the lumen price?"
-          ],
-          "keywords": [
-            "Stellar",
-            "Lumens",
-            "Cryptocurrency"
-          ],
-          "name": "Lumen Price",
-          "description": "Ask for the current Lumen Price, and retrieve the latest info from coinmarketcap.com.\n\nLumen price will keep you uptodate about your favorite cryptocurrency Stellar Lumens.\n\nTo start, just say \"Alexa, start Lumen Price\" or \"Alexa, open Lumen Price\" to get the current price\".\n\nAt anytime, you can stop by saying \"Alexa, stop\""
-        },
+        }
+      },
       "isAvailableWorldwide": true,
       "testingInstructions": "Sample Testing Instructions.",
       "category": "EDUCATION_AND_REFERENCE",
