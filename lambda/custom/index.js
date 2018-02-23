@@ -20,6 +20,10 @@ const SKILL_NAME = 'Lumen Price';
 const HELP_MESSAGE = 'You can say tell me a space fact, or, you can say exit... What can I help you with?';
 const HELP_REPROMPT = 'What can I help you with?';
 const STOP_MESSAGE = 'Goodbye have a stellar time!';
+const imageObj = {
+    smallImageUrl: 'https://s3.amazonaws.com/gregor-misc/stellar-rocket.png',
+    largeImageUrl: 'https://s3.amazonaws.com/gregor-misc/stellar-rocket.png'
+};
 
 //=========================================================================================================================================
 //Editing anything below this line might break your skill.
@@ -39,13 +43,17 @@ const handlers = {
     'GetLumenPriceDollarsIntent': function () {
         getRequest(crypto, (apiResult) => {
             const speechOutput = "The current lumen price on coinmarketcap.com is: " + apiResult["price_usd"] + " dollars.";
-            this.emit(':tellWithCard', speechOutput, SKILL_NAME, speechOutput);
+            this.response.speak(speechOutput)
+                .cardRenderer(SKILL_NAME, speechOutput, imageObj);
+            this.emit(':responseReady');
         }); 
     },
     'GetLumenPriceBtcIntent': function () {
         getRequest(crypto, (apiResult) => {
             const speechOutput = "The current lumen price on coinmarketcap.com is: " + apiResult["price_btc"] + " bitcoin.";
-            this.emit(':tellWithCard', speechOutput, SKILL_NAME, speechOutput);
+            this.response.speak(speechOutput)
+                .cardRenderer(SKILL_NAME, speechOutput, imageObj);
+            this.emit(':responseReady');
         }); 
     },
     'AMAZON.HelpIntent': function () {
