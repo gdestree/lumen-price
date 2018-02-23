@@ -3,36 +3,35 @@
     "publishingInformation": {
       "locales": {
         "en-US": {
-          "summary": "Learn fun facts about space.",
+          "summary": "Retrieve the latest info on Stellar Lumens from coinmarketcap.com.",
           "examplePhrases": [
-            "Alexa open space facts",
-            "Alexa ask space facts for a fact",
-            "Alexa tell space facts to tell me trivia"
+            "Alexa start Lumen Price",
+            "Alexa open Lumen Price",
+            "Alexa what is the lumen price?"
           ],
           "keywords": [
-            "space",
-            "facts",
-            "trivia"
+            "Stellar",
+            "Lumens",
+            "Cryptocurrency"
           ],
-          "name": "lumen-price",
-          "description": "Ask for Space Facts, and learn about what really matters, like dark matter.\n\nSpace Facts provides fun the whole family can enjoy and is guaranteed to make you smarter.\n\nTo start, just say \"Alexa, launch Space Facts\" or \"Alexa, open Space Facts\" to get a fact\".\n\nAt anytime, you can stop by saying \"Alexa, stop\""
+          "name": "Lumen Price",
+          "description": "Ask for the current Lumen Price, and retrieve the latest info from coinmarketcap.com.\n\nLumen price will keep you uptodate about your favorite cryptocurrency Stellar Lumens.\n\nTo start, just say \"Alexa, start Lumen Price\" or \"Alexa, open Lumen Price\" to get the current price\".\n\nAt anytime, you can stop by saying \"Alexa, stop\""
         },
         "en-GB": {
-          "summary": "Listen to My Radio, less bla bla bla, more la la la.",
+          "summary": "Retrieve the latest info on Stellar Lumens from coinmarketcap.com.",
           "examplePhrases": [
-            "Alexa, open My Radio",
-            "Alexa, play My Radio",
-            "Alexa, ask My Radio to play"
+            "Alexa start Lumen Price",
+            "Alexa open Lumen Price",
+            "Alexa what is the lumen price?"
           ],
           "keywords": [
-            "music",
-            "streaming",
-            "radio"
+            "Stellar",
+            "Lumens",
+            "Cryptocurrency"
           ],
-          "name": "lumen-price",
-          "description": "Listen to My Radio, with less bla bla bla, and more la la la.\n\nMy Radio provides a high quality sound 24/7 with the best music.\n\nTo start, just say \"Alexa, launch My Radio\" or \"Alexa, play my radio\" to start the radio\".\n\nAt anytime, you can stop the radio by saying \"Alexa, stop\""
-        }
-      },
+          "name": "Lumen Price",
+          "description": "Ask for the current Lumen Price, and retrieve the latest info from coinmarketcap.com.\n\nLumen price will keep you uptodate about your favorite cryptocurrency Stellar Lumens.\n\nTo start, just say \"Alexa, start Lumen Price\" or \"Alexa, open Lumen Price\" to get the current price\".\n\nAt anytime, you can stop by saying \"Alexa, stop\""
+        },
       "isAvailableWorldwide": true,
       "testingInstructions": "Sample Testing Instructions.",
       "category": "EDUCATION_AND_REFERENCE",
