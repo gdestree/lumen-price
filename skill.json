@@ -12,10 +12,14 @@
           "keywords": [
             "Stellar",
             "Lumens",
-            "Cryptocurrency"
+            "Cryptocurrency",
+            "Price",
+            "XLM"
           ],
           "name": "Lumen Price",
-          "description": "Ask for the current Lumen Price, and retrieve the latest info from coinmarketcap.com.\n\nLumen price will keep you upto date about your favorite cryptocurrency Stellar Lumens.\n\nTo start, just say \"Alexa, start Lumen Price\" or \"Alexa, what is the lumen price?\" or \"Alexa, what is the lumen price in dollars?\" or \"Alexa, what is the lumen price in bitcoin?\" to get the current price.\n\nAt anytime, you can stop by saying \"Alexa, stop\" \n\nFeel Free to donate lumen on: GC42ZJ532XH653ZRKCDISBTWOKR3FQ7UCQAQ7XWYZ4FHIRRCXTQKE5PA"
+          "description": "Ask for the current Lumen Price, and retrieve the latest info from coinmarketcap.com.\n\nLumen price will keep you upto date about your favorite cryptocurrency Stellar Lumens.\n\nTo start, just say \"Alexa, start Lumen Price\" or \"Alexa, what is the lumen price?\" or \"Alexa, what is the lumen price in dollars?\" or \"Alexa, what is the lumen price in bitcoin?\" to get the current price.\n\nAt anytime, you can stop by saying \"Alexa, stop\" \n\nFeel Free to donate lumen on: GC42ZJ532XH653ZRKCDISBTWOKR3FQ7UCQAQ7XWYZ4FHIRRCXTQKE5PA",
+          "smallIconUri": "https://s3.amazonaws.com/gregor-misc/stellar-rocket-108.png",
+          "largeIconUri": "https://s3.amazonaws.com/gregor-misc/stellar-rocket-512.png"
         }
       },
       "isAvailableWorldwide": true,
@@ -30,6 +34,19 @@
         }
       }
     },
-    "manifestVersion": "1.0"
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {
+          "termsOfUseUrl": "",
+          "privacyPolicyUrl": ""
+        }
+      },
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
   }
 }
