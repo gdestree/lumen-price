@@ -10,39 +10,16 @@
 
 'use strict';
 const Alexa = require('alexa-sdk');
+const APP_ID = 'amzn1.ask.skill.c4d033e6-fb53-4bbb-8e0a-ec8dbfd640fc';
 
-//=========================================================================================================================================
-//TODO: The items below this comment need your attention.
-//=========================================================================================================================================
+const https = require('https');
+const url = "https://api.coinmarketcap.com/v1/ticker/";
+const crypto = "stellar/";
 
-//Replace with your app ID (OPTIONAL).  You can find this value at the top of your skill's page on http://developer.amazon.com.
-//Make sure to enclose your value in quotes, like this: const APP_ID = 'amzn1.ask.skill.bb4045e6-b3e8-4133-b650-72923c5980f1';
-const APP_ID = undefined;
-
-const SKILL_NAME = 'Space Facts';
-const GET_FACT_MESSAGE = "Here's your fact: ";
+const SKILL_NAME = 'Lumen Price';
 const HELP_MESSAGE = 'You can say tell me a space fact, or, you can say exit... What can I help you with?';
 const HELP_REPROMPT = 'What can I help you with?';
-const STOP_MESSAGE = 'Goodbye!';
-
-//=========================================================================================================================================
-//TODO: Replace this data with your own.  You can find translations of this data at http://github.com/alexa/skill-sample-node-js-fact/lambda/data
-//=========================================================================================================================================
-const data = [
-    'A year on Mercury is just 88 days long.',
-    'Despite being farther from the Sun, Venus experiences higher temperatures than Mercury.',
-    'Venus rotates counter-clockwise, possibly because of a collision in the past with an asteroid.',
-    'On Mars, the Sun appears about half the size as it does on Earth.',
-    'Earth is the only planet not named after a god.',
-    'Jupiter has the shortest day of all the planets.',
-    'The Milky Way galaxy will collide with the Andromeda Galaxy in about 5 billion years.',
-    'The Sun contains 99.86% of the mass in the Solar System.',
-    'The Sun is an almost perfect sphere.',
-    'A total solar eclipse can happen once every 1 to 2 years. This makes them a rare event.',
-    'Saturn radiates two and a half times more energy into space than it receives from the sun.',
-    'The temperature inside the Sun can reach 15 million degrees Celsius.',
-    'The Moon is moving approximately 3.8 cm away from our planet every year.'
-];
+const STOP_MESSAGE = 'Goodbye have a stellar time!';
 
 //=========================================================================================================================================
 //Editing anything below this line might break your skill.
@@ -57,17 +34,13 @@ exports.handler = function(event, context, callback) {
 
 const handlers = {
     'LaunchRequest': function () {
-        this.emit('GetNewFactIntent');
+        this.emit('GetLumenPriceIntent');
     },
-    'GetNewFactIntent': function () {
-        const factArr = data;
-        const factIndex = Math.floor(Math.random() * factArr.length);
-        const randomFact = factArr[factIndex];
-        const speechOutput = GET_FACT_MESSAGE + randomFact;
-
-        this.response.cardRenderer(SKILL_NAME, randomFact);
-        this.response.speak(speechOutput);
-        this.emit(':responseReady');
+    'GetLumenPriceIntent': function () {
+        getRequest(crypto, (apiResult) => {
+            const speechOutput = "The current lumen price on coinmarketcap.com is: " + apiResult["price_usd"] + "dollars." ;
+            this.emit(':tellWithCard', speechOutput, SKILL_NAME, speechOutput)
+        }); 
     },
     'AMAZON.HelpIntent': function () {
         const speechOutput = HELP_MESSAGE;
@@ -85,3 +58,21 @@ const handlers = {
         this.emit(':responseReady');
     },
 };
+
+// HELPER FUNCTIONS
+function getRequest(crypto, callback) {
+    var req = https.request((url + crypto), res => {
+        res.setEncoding('utf8');
+        var returnData = "";
+
+        res.on('data', chunk => {
+            returnData = returnData + chunk;
+        });
+        res.on('end', () => {
+            var result = JSON.parse(returnData)[0];
+            callback(result);
+        });
+
+    });
+    req.end();
+}
