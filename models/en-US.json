@@ -16,7 +16,7 @@
           "samples": []
         },
         {
-          "name": "GetLumenPriceIntent",
+          "name": "GetLumenPriceDollarsIntent",
           "samples": [
             "what is the price",
             "what is the current price",
@@ -34,6 +34,28 @@
             "read me the lumen price",
             "read me the xlm price",
             "read me the current price"
+          ],
+          "slots": []
+        },
+        {
+          "name": "GetLumenPriceBtcIntent",
+          "samples": [
+            "what is the price in bitcoin",
+            "what is the current price in bitcoin",
+            "what is the lumen price in bitcoin",
+            "what is the xlm price in bitcoin",
+            "tell me the price in bitcoin",
+            "tell me the current price in bitcoin",
+            "tell me the lumen price in bitcoin",
+            "tell me the xlm price in bitcoin",
+            "give me the price in bitcoin",
+            "give me the xlm price in bitcoin",
+            "give me the lumen price in bitcoin",
+            "give me the current price in bitcoin",
+            "read me the price in bitcoin",
+            "read me the lumen price in bitcoin",
+            "read me the xlm price in bitcoin",
+            "read me the current price in bitcoin"
           ],
           "slots": []
         }

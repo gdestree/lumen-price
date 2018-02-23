@@ -34,11 +34,17 @@ exports.handler = function(event, context, callback) {
 
 const handlers = {
     'LaunchRequest': function () {
-        this.emit('GetLumenPriceIntent');
+        this.emit('GetLumenPriceDollarsIntent');
     },
-    'GetLumenPriceIntent': function () {
+    'GetLumenPriceDollarsIntent': function () {
         getRequest(crypto, (apiResult) => {
-            const speechOutput = "The current lumen price on coinmarketcap.com is: " + apiResult["price_usd"] + "dollars." ;
+            const speechOutput1 = "The current lumen price on coinmarketcap.com is: " + apiResult["price_usd"] + " dollars.";
+            this.emit(':tellWithCard', speechOutput, SKILL_NAME, speechOutput);
+        }); 
+    },
+    'GetLumenPriceBtcIntent': function () {
+        getRequest(crypto, (apiResult) => {
+            const speechOutput1 = "The current lumen price on coinmarketcap.com is: " + apiResult["price_btc"] + " bitcoin.";
             this.emit(':tellWithCard', speechOutput, SKILL_NAME, speechOutput);
         }); 
     },
