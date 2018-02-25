@@ -42,7 +42,7 @@ const handlers = {
     },
     'GetLumenPriceDollarsIntent': function () {
         getRequest(crypto, (apiResult) => {
-            const speechOutput = "The current lumen price is: " + apiResult["price_usd"] + " dollars. " + "That has changed -2.51% in the last 24 hours";
+            const speechOutput = "The current lumen price is: " + apiResult["price_usd"] + " dollars. A change of  " + apiResult["percent_change_24h"] + "% in the last 24 hours.";
             this.response.speak(speechOutput)
                 .cardRenderer(SKILL_NAME, speechOutput, imageObj);
             this.emit(':responseReady');
