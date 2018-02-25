@@ -5,7 +5,7 @@
         "en-US": {
           "summary": "Retrieve the latest info on Stellar Lumens from coinmarketcap.com.",
           "examplePhrases": [
-            "Start lumen price",
+            "Alexa, start lumen price",
             "What is the lumen price in dollars?",
             "What is the lumen price in bitcoin?"
           ],
