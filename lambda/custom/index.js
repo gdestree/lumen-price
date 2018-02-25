@@ -17,7 +17,7 @@ const url = "https://api.coinmarketcap.com/v1/ticker/";
 const crypto = "stellar/";
 
 const SKILL_NAME = 'Lumen Price';
-const HELP_MESSAGE = 'You can say tell me a space fact, or, you can say exit... What can I help you with?';
+const HELP_MESSAGE = 'You can say what is the lumen price, or, you can say exit... What can I help you with?';
 const HELP_REPROMPT = 'What can I help you with?';
 const STOP_MESSAGE = 'Goodbye have a stellar time!';
 const imageObj = {
@@ -42,7 +42,7 @@ const handlers = {
     },
     'GetLumenPriceDollarsIntent': function () {
         getRequest(crypto, (apiResult) => {
-            const speechOutput = "The current lumen price is: " + apiResult["price_usd"] + " dollars." + "That has changed -2.51% in the last 24 hours";
+            const speechOutput = "The current lumen price is: " + apiResult["price_usd"] + " dollars. " + "That has changed -2.51% in the last 24 hours";
             this.response.speak(speechOutput)
                 .cardRenderer(SKILL_NAME, speechOutput, imageObj);
             this.emit(':responseReady');
