@@ -42,17 +42,15 @@ const handlers = {
     },
     'GetLumenPriceDollarsIntent': function () {
         getRequest(crypto, (apiResult) => {
-            const speechOutput = "The current lumen price on coinmarketcap.com is: " + apiResult["price_usd"] + " dollars.";
-            this.emit(':tellWithCard', speechOutput, SKILL_NAME, speechOutput, imageObj);
-
-            // this.response.speak(speechOutput)
-            //     .cardRenderer(SKILL_NAME, speechOutput, imageObj);
-            // this.emit(':responseReady');
+            const speechOutput = "The current lumen price is: " + apiResult["price_usd"] + " dollars." + "That has changed -2.51% in the last 24 hours";
+            this.response.speak(speechOutput)
+                .cardRenderer(SKILL_NAME, speechOutput, imageObj);
+            this.emit(':responseReady');
         }); 
     },
     'GetLumenPriceBtcIntent': function () {
         getRequest(crypto, (apiResult) => {
-            const speechOutput = "The current lumen price on coinmarketcap.com is: " + apiResult["price_btc"] + " bitcoin.";
+            const speechOutput = "The current lumen price is: " + apiResult["price_btc"] + " bitcoin.";
             this.response.speak(speechOutput)
                 .cardRenderer(SKILL_NAME, speechOutput, imageObj);
             this.emit(':responseReady');
