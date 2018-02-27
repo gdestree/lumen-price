@@ -50,8 +50,7 @@
             "read me the lumen price in dollar",
             "read me the xlm price in dollar",
             "read me the current price in dollar"
-          ],
-          "slots": []
+          ]
         },
         {
           "name": "GetLumenPriceBtcIntent",
@@ -72,8 +71,22 @@
             "read me the lumen price in bitcoin",
             "read me the xlm price in bitcoin",
             "read me the current price in bitcoin"
+          ]
+        },
+        {
+          "name": "ConvertLumensToDollars",
+          "slots": [
+            {
+              "name": "amount",
+              "type": "AMAZON.NUMBER"
+            }
           ],
-          "slots": []
+          "samples": [
+            "convert {amount} lumens",
+            "convert {amount}",
+            "convert {amount} lumens to dollars",
+            "convert {amount} to dollars"
+          ]
         }
       ]
     }
