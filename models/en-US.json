@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "lumen price",
+      "invocationName": "steallar lumen",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -83,9 +83,31 @@
           ],
           "samples": [
             "convert {amount} lumens",
+            "what is {amount} lumens worth",
+            "what is {amount} lumens",
+            "what is {amount} lumens in dollars",
+            "how much is {amount} lumens in dollars",
+            "how much is {amount} lumens",
+            "how much is {amount} lumens is",
             "convert {amount}",
             "convert {amount} lumens to dollars",
             "convert {amount} to dollars"
+          ]
+        },
+        {
+          "name": "ConvertLumensToBitcoins",
+          "slots": [
+            {
+              "name": "amount",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "what is {amount} lumens in bitcoin",
+            "how much is {amount} lumens in bitcoin",
+            "convert {amount} lumens to bitcoin",
+            "convert {amount} to bitcoin",
+            "convert {amount} in bitcoin"
           ]
         }
       ]
