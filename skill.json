@@ -5,9 +5,9 @@
         "en-US": {
           "summary": "Retrieve the latest info on Stellar Lumens from coinmarketcap.com.",
           "examplePhrases": [
-            "Alexa, start lumen price",
-            "What is the lumen price in dollars?",
-            "What is the lumen price in bitcoin?"
+            "Alexa, start Stellar Lumen",
+            "ask stellar lumen what is the lumen price?",
+            "ask Stellar lumen to convert fifty lumens."
           ],
           "keywords": [
             "Stellar",
@@ -16,8 +16,8 @@
             "Price",
             "XLM"
           ],
-          "name": "Lumen Price",
-          "description": "Ask for the current Lumen Price, and retrieve the latest info from coinmarketcap.com.\n\nLumen price will keep you upto date about your favorite cryptocurrency Stellar Lumens.\n\nTo start, just say \"Alexa, start Lumen Price\" or \"Alexa, what is the lumen price?\" or \"Alexa, what is the lumen price in dollars?\" or \"Alexa, what is the lumen price in bitcoin?\" to get the current price.\n\nAt anytime, you can stop by saying \"Alexa, stop\"",
+          "name": "Stellar Lumen",
+          "description": "Ask for the current Lumen Price, and retrieve the latest info from coinmarketcap.com.\n\nLumen price will keep you upto date about your favorite cryptocurrency Stellar Lumens.\n\nTo start, just say \"Alexa, start Stellar Lumen\" or \"Alexa, ask Stellar Lumen what is the lumen price?\" this defaults to dollars or \"Alexa, ask Stellar Lumen what is the lumen price in bitcoin?\" to get the current price in bitcoin. You can also ask \"Alexa, ask Stellar Lumen to convert 10 lumens.\" \n\nAt anytime, you can stop by saying \"Alexa, stop\"",
           "smallIconUri": "https://s3.amazonaws.com/gregor-misc/stellar-rocket-108.png",
           "largeIconUri": "https://s3.amazonaws.com/gregor-misc/stellar-rocket-512.png"
         }
