@@ -5,7 +5,7 @@
         "en-US": {
           "summary": "Retrieve the latest info on Stellar Lumens from coinmarketcap.com.",
           "examplePhrases": [
-            "Alexa, start Stellar Lumen",
+            "Alexa, launch Stellar Lumen",
             "ask stellar lumen what is the lumen price?",
             "ask Stellar lumen to convert fifty lumens."
           ],

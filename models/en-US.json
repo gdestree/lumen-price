@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "steallar lumen",
+      "invocationName": "stellar lumen",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -113,10 +113,13 @@
           ],
           "samples": [
             "what is {amount} lumens in bitcoin",
+            "what is {amount} lumens in bitcoins",
             "how much is {amount} lumens in bitcoin",
+            "how much is {amount} lumens in bitcoins",
             "convert {amount} lumens to bitcoin",
+            "convert {amount} lumens to bitcoins",
             "convert {amount} to bitcoin",
-            "convert {amount} in bitcoin"
+            "convert {amount} in bitcoins"
           ]
         }
       ]
